@@ -9,6 +9,7 @@
   const quoteSource = document.querySelector('[data-quote-source]');
   const storyGrid = document.querySelector('[data-story-grid]');
   let toastTimer;
+  let currentStorySignature = '';
 
   const chickenQuotes = [
     {
@@ -112,7 +113,13 @@
 
   const renderStories = () => {
     if (!storyGrid) return;
-    const stories = pickRandomItems(chickenStories, 3);
+    let stories = pickRandomItems(chickenStories, 3);
+    let signature = stories.map((story) => story.title).sort().join('|');
+    if (signature === currentStorySignature) {
+      stories = pickRandomItems(chickenStories, 3);
+      signature = stories.map((story) => story.title).sort().join('|');
+    }
+    currentStorySignature = signature;
     storyGrid.replaceChildren(...stories.map((story) => {
       const card = document.createElement('article');
       const tag = document.createElement('p');
