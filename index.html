@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7fbff" />
+  <meta name="description" content="チキンポータル：入る勇気のない人のための入口。静的な高品質ダミーサイトです。" />
+  <title>チキンポータル｜入る勇気のない人のための入口</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/hero-mascot.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">本文へスキップ</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="チキンポータル ホーム">
+        <img src="assets/logo.svg" alt="" width="58" height="58" />
+        <span class="brand-text">
+          <strong>チキンポータル</strong>
+          <small>ビビりの、ビビりによる、ビビりのためのポータルサイト</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav" data-menu-button>
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニューを開閉</span>
+      </button>
+
+      <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション" data-nav>
+        <a href="#top" aria-current="page"><span>🏠</span>ホーム</a>
+        <a href="#guide"><span>❔</span>使い方</a>
+        <a href="#stories"><span>💬</span>チキり体験</a>
+        <a href="#gentle-map"><span>💙</span>やさしい世界</a>
+        <a href="#faq"><span>🐣</span>よくあるチキ問</a>
+      </nav>
+
+      <button class="header-action" type="button" data-open-diagnosis>
+        <span class="rainbow-dot" aria-hidden="true"></span>
+        チキンレベル診断
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="cloud cloud-a"></span>
+        <span class="cloud cloud-b"></span>
+        <span class="cloud cloud-c"></span>
+      </div>
+      <div class="container hero-layout">
+        <div class="mascot-card" aria-hidden="true">
+          <span class="floating-label">チキってOK</span>
+          <img src="assets/hero-mascot.png" alt="" width="316" height="480" />
+          <div class="thought-bubble">だ、大丈夫…<br />たぶん…<br />きっと…<br /><small>（たぶん）</small></div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">CHICKEN PORTAL / STATIC MOCK</p>
+          <h1 id="hero-title">入る勇気のない人のための<span>入口</span></h1>
+          <p class="lead">
+            急かさない。責めない。ちょっとだけ背中を押す。<br />
+            チキンポータルは、ためらいを肯定する架空のポータルサイトです。
+          </p>
+
+          <div class="decision-panel" aria-label="入口の選択肢">
+            <button class="decision decision-enter" type="button" data-toast="勇気を検知しました。いま、ドアの向こうで全員が無言で拍手しています。">
+              <img src="assets/door.svg" alt="" />
+              <span>本当に入りますか？</span>
+              <b aria-hidden="true">›</b>
+            </button>
+            <button class="decision decision-retreat" type="button" data-toast="撤退、極めて戦略的です。今日のあなたはリスク管理がうまい。">
+              <img src="assets/turnback.svg" alt="" />
+              <span>やっぱりやめますか？</span>
+              <b aria-hidden="true">›</b>
+            </button>
+            <button class="decision decision-sofa" type="button" data-toast="今日は回復に全振りしましょう。ソファ側もあなたを待っていました。">
+              <img src="assets/sofa.svg" alt="" />
+              <span>今日はやめておきますか？</span>
+              <b aria-hidden="true">›</b>
+            </button>
+          </div>
+
+          <p class="micro-note"><span>🛡️</span>ここでは、チキっても怒られません。安心してご利用ください。</p>
+        </div>
+
+        <aside class="login-card" aria-labelledby="login-title">
+          <div class="login-heading">
+            <span aria-hidden="true">🔒</span>
+            <div>
+              <h2 id="login-title">ログイン</h2>
+              <p>がんばる人はこちら</p>
+            </div>
+          </div>
+
+          <form class="login-form" data-login-form>
+            <label>
+              <span class="sr-only">ユーザー名またはメールアドレス</span>
+              <input type="text" placeholder="ユーザー名またはメールアドレス" autocomplete="username" />
+            </label>
+            <label>
+              <span class="sr-only">パスワード</span>
+              <input type="password" placeholder="パスワード" autocomplete="current-password" />
+            </label>
+            <label class="checkbox-row"><input type="checkbox" /> 次回からそっとログイン 🐔</label>
+            <button class="primary-button" type="submit">🐣 ログイン</button>
+          </form>
+
+          <div class="support-links">
+            <button type="button" data-toast="パスワード再発行メールは送れませんが、気持ちは送信しました。">🔑 パスワードを忘れた方はこちら</button>
+            <button type="button" data-toast="自信は最後に使ったポケットを確認してください。たまに深呼吸の横にあります。">💔 自信を忘れた方はこちら</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="feature-section" id="guide" aria-labelledby="feature-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FEATURES</p>
+          <h2 id="feature-title">チキンのための、やさしい機能</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="assets/gauge.svg" alt="" />
+            <h3>チキりレベル診断</h3>
+            <p>あなたのチキり度を5段階で診断。意外と勇者かもしれません。</p>
+            <button type="button" data-open-diagnosis>今すぐ診断する</button>
+          </article>
+          <article class="feature-card">
+            <img src="assets/chick.svg" alt="" />
+            <h3>みんなのチキり体験</h3>
+            <p>共感の嵐で涙が出る、みんなの「チキった瞬間」をのぞけます。</p>
+            <a href="#stories">体験をのぞく</a>
+          </article>
+          <article class="feature-card">
+            <img src="assets/globe.svg" alt="" />
+            <h3>やさしい世界マップ</h3>
+            <p>急かされないお店やサービスを、だいぶ主観で紹介します。</p>
+            <a href="#gentle-map">マップを見る</a>
+          </article>
+          <article class="feature-card feature-card-warm">
+            <img src="assets/omamori.svg" alt="" />
+            <h3>チキンお守り（無料）</h3>
+            <p>見るだけで、ちょっと勇気が出るかもしれないお守りです。</p>
+            <button type="button" data-toast="チキンお守りを授与しました。効能：クリック前より0.3mmだけ前向き。">お守りを受け取る</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-strip" aria-label="使い方と格言">
+      <div class="container strip-grid">
+        <article class="quote-card">
+          <span class="quote-label">今日のチキン格言</span>
+          <blockquote>「逃げるがチキンの役に立つ」</blockquote>
+          <cite>— チキン仙人</cite>
+        </article>
+        <article class="guide-card">
+          <p class="eyebrow">HOW TO USE</p>
+          <h2>使い方は、限りなく低圧です</h2>
+          <ol>
+            <li><span>1</span> 心拍数が上がらないボタンから押す</li>
+            <li><span>2</span> ためらったら、ためらったまま保存する</li>
+            <li><span>3</span> 明日の自分に判断をやさしく委譲する</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="stories" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section-head section-head-inline">
+          <div>
+            <p class="eyebrow">COMMUNITY</p>
+            <h2 id="stories-title">本日のチキり体験</h2>
+          </div>
+          <button class="soft-button" type="button" data-toast="投稿フォームは準備中です。あなたの『あるある』は、すでに誰かを救っています。">投稿してみる</button>
+        </div>
+        <div class="story-grid">
+          <article class="story-card"><p>#飲み会</p><h3>「今行きます」と言ってから靴下を選ぶのに17分かかった</h3><span>参加はした。だから勝ち。集合時間という概念には、少しだけ負けた。</span></article>
+          <article class="story-card"><p>#資料提出</p><h3>完璧に直そうとして、結局「一旦これで」で提出した</h3><span>一旦、は魔法の言葉。世界を前に進める小さな呪文です。</span></article>
+          <article class="story-card"><p>#美容院</p><h3>「こんな感じで」と言えず、画像を無言で差し出した</h3><span>非言語コミュニケーションの高度活用。つまりDXです。</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gentle-map" id="gentle-map" aria-labelledby="map-title">
+      <div class="container map-grid">
+        <div class="map-copy">
+          <p class="eyebrow">SAFE WORLD MAP</p>
+          <h2 id="map-title">やさしい世界マップ</h2>
+          <p>「店員さんが急かさない」「キャンセル文がテンプレで済む」「初回説明が丁寧」など、チキンに優しい軸で世界を眺めます。</p>
+          <button class="soft-button" type="button" data-toast="マップはまだ妄想段階です。まずは脳内でピンを立てました。">近くのやさしさを見る</button>
+        </div>
+        <div class="map-card" aria-hidden="true">
+          <span class="pin pin-a">🪶</span>
+          <span class="pin pin-b">🐥</span>
+          <span class="pin pin-c">💙</span>
+          <span class="pin pin-d">🛋</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="チキンポータル統計">
+      <div class="container stats-grid">
+        <div class="stats-title"><img src="assets/feather.svg" alt="" /><strong>チキンポータルは<br />今日も平和です</strong></div>
+        <div class="stat"><span>本日のチキり人数</span><strong>84,219人</strong><small>昨日より +2,317人</small></div>
+        <div class="stat"><span>やめた人数（えらい）</span><strong>52,008人</strong><small>昨日より +1,892人</small></div>
+        <div class="stat"><span>今日はやめた人数</span><strong>71,403人</strong><small>昨日より +2,713人</small></div>
+        <div class="stat"><span>チキンレベル平均</span><strong>★★★☆☆</strong><small>Lv.2.8（ビビり中級）</small></div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">よくあるチキ問</h2>
+          <p>静的サイトですが、ためらいへの配慮だけは動的です。</p>
+        </div>
+        <div class="faq-list">
+          <details><summary>チキっても利用できますか？</summary><p>むしろメインターゲットです。ためらいに優しいUIを目指しています。</p></details>
+          <details><summary>ログインしなくても大丈夫ですか？</summary><p>もちろんです。ログインボタンを眺めるだけでも立派な利用です。</p></details>
+          <details><summary>このサイトは本物ですか？</summary><p>静的ダミーサイトです。バックエンドも個人情報の保存もありません。</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>チキンポータル</strong> — 入れない人にも、入らない人にも、そっと拍手を。</p>
+      <p>© 2026 Chicken Portal Static Mock</p>
+    </div>
+  </footer>
+
+  <dialog class="diagnosis-dialog" data-diagnosis-dialog>
+    <form method="dialog" class="dialog-card">
+      <button class="dialog-close" value="cancel" aria-label="閉じる">×</button>
+      <img src="assets/chick.svg" alt="" aria-hidden="true" />
+      <p class="eyebrow">CHICKEN LEVEL</p>
+      <h2>あなたのチキンレベル診断</h2>
+      <fieldset>
+        <legend>今日の気分に近いものを選んでください</legend>
+        <label><input type="radio" name="fear" value="2" checked /> ボタンにカーソルを置けた</label>
+        <label><input type="radio" name="fear" value="3" /> 送信前に文章を3回見直した</label>
+        <label><input type="radio" name="fear" value="4" /> 一旦下書きで寝かせたい</label>
+        <label><input type="radio" name="fear" value="5" /> 戻るボタンの位置を先に確認した</label>
+      </fieldset>
+      <output class="diagnosis-result" data-diagnosis-result>診断ボタンを押すと、やさしい結果が出ます。</output>
+      <button class="primary-button" type="button" data-run-diagnosis>診断する</button>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast-box hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
