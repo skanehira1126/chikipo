@@ -153,10 +153,10 @@
 
     <section class="content-strip" aria-label="使い方と格言">
       <div class="container strip-grid">
-        <article class="quote-card">
+        <article class="quote-card" data-random-quote>
           <span class="quote-label">今日のチキン格言</span>
-          <blockquote>「逃げるがチキンの役に立つ」</blockquote>
-          <cite>— チキン仙人</cite>
+          <blockquote data-quote-text>「逃げるがチキンの役に立つ」</blockquote>
+          <cite data-quote-source>— チキン仙人</cite>
         </article>
         <article class="guide-card">
           <p class="eyebrow">HOW TO USE</p>
@@ -177,9 +177,12 @@
             <p class="eyebrow">COMMUNITY</p>
             <h2 id="stories-title">本日のチキり体験</h2>
           </div>
-          <button class="soft-button" type="button" data-toast="投稿フォームは準備中です。あなたの『あるある』は、すでに誰かを救っています。">投稿してみる</button>
+          <div class="story-actions">
+            <button class="soft-button" type="button" data-refresh-stories>体験を入れ替える</button>
+            <button class="soft-button" type="button" data-toast="投稿フォームは準備中です。あなたの『あるある』は、すでに誰かを救っています。">投稿してみる</button>
+          </div>
         </div>
-        <div class="story-grid">
+        <div class="story-grid" data-story-grid aria-live="polite">
           <article class="story-card"><p>#飲み会</p><h3>「今行きます」と言ってから靴下を選ぶのに17分かかった</h3><span>参加はした。だから勝ち。集合時間という概念には、少しだけ負けた。</span></article>
           <article class="story-card"><p>#資料提出</p><h3>完璧に直そうとして、結局「一旦これで」で提出した</h3><span>一旦、は魔法の言葉。世界を前に進める小さな呪文です。</span></article>
           <article class="story-card"><p>#美容院</p><h3>「こんな感じで」と言えず、画像を無言で差し出した</h3><span>非言語コミュニケーションの高度活用。つまりDXです。</span></article>
